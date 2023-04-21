@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * @mixin IdeHelperplatforms
  */
-class platforms extends Model
+class Platforms extends Model
 {
     use HasFactory;
 }

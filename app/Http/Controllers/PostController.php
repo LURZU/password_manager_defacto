@@ -51,8 +51,6 @@ class PostController extends Controller
     }
 
     public function index(): View {
-
-       
         return view('blog.index', ['posts' => Post::with('tags', 'category')->paginate(6)]);
     }
 

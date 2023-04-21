@@ -48,12 +48,7 @@ $routeName = request()->route()->getName();
                 </div>
             </div>
         </nav>
-        <header class="py-12 bg-gradient-to-r from-green-400 to-blue-500">
-            <div class="container mx-auto text-center">
-                <h1 class="text-4xl font-bold text-white mb-2">Bienvenue sur mon blog</h1>
-                <p class="text-white text-lg">Découvrez mes articles sur divers sujets</p>
-            </div>
-        </header>
+     
 
     <div class="w-full">
         @if(session('success'))

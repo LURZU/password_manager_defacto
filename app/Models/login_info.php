@@ -8,7 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * @mixin IdeHelperlogin_info
  */
-class login_info extends Model
+class Login_info extends Model
 {
     use HasFactory;
+    
+    public function clients()
+    {
+        return $this->belongsToMany(Client::class);
+    }
 }

@@ -19,22 +19,15 @@
                             <img src="{{$post->imageUrl()}}" alt="Image de l'article" class="w-full h-48 object-cover">
                             @endif
                             <div class="p-4">
-                                <div class="flex"> 
-                                    <p class="mr-4">
+                                <div class="flex center"> 
+                                    <p class="mr-4 justify-center text-center">
                                         @if($post->category)
                                         Categorie : {{$post->category?->name}}
                                         @endif
                                     </p>
-                                     @if(!$post->tags->isEmpty()) 
-                                     <p>Tags : 
-                                        @foreach($post->tags as $tag)
-                                        <span class="badge text-xs bg-gray-300 rounded px-1 py-1">{{$tag->name}}</span>
-                                        @endforeach
-                                    </p>
-                                        @endif
+                                   
                                 </div>
-                                <h2 class="text-xl font-bold mb-2"><a href="#" class="hover:text-blue-500">{{ $post->name }}</a></h2>
-                                <p class="text-gray-700 text-base">{{ $post->content }}</p>
+                                <h2 class="text-xl font-bold mb-2 text-center"><a href="#" class="hover:text-blue-500">{{ $post->name }}</a></h2>
                             </div>
                         </div>
                     </a>
